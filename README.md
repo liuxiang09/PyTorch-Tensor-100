@@ -161,3 +161,25 @@
 - 理解每个操作背后的原理，而不只是记住 API
 - 尝试将多个操作组合起来解决更复杂的问题
 - 使用 PyTorch 官方文档作为补充学习资源
+
+## 🤝 参与贡献
+
+我们非常欢迎并感谢您对本项目做出贡献，无论贡献大小！
+
+### 如何贡献
+
+- **提交 Issue**: 发现错误、有改进建议或新的练习想法? [提交 Issue](../../issues/new) 告诉我们!
+- **提交 Pull Request**: 直接修复错误或添加新功能:
+  1. Fork 本仓库
+  2. 创建您的特性分支 (`git checkout -b feature/AmazingFeature`)
+  3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
+  4. 推送到分支 (`git push origin feature/AmazingFeature`)
+  5. 打开 Pull Request
+
+### 贡献指南
+
+- 确保新练习符合项目整体风格和结构
+- 添加适当的注释，使代码易于理解
+- 尽可能添加多样、全面的解答
+
+如果您觉得这个项目对您有所帮助，请给它一个 ⭐️ 以示支持，这对维护者意义重大！
