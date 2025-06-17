@@ -6,7 +6,9 @@
   <h3>深入学习 PyTorch 张量操作的 100 个练习</h3>
 </div>
 
-> 这是一个为 PyTorch 初学者设计的循序渐进学习路线图。我们的目标是创建一个内容全面、知识点系统、并且**不仅仅聚焦于 Tensor 计算本身**的练习集。
+> 本项目灵感来源于 [numpy-100](https://github.com/rougier/numpy-100) 项目。在当前开源社区中，我们发现缺少一个类似于 numpy-100 的专注于 PyTorch Tensor 操作的系统性练习题集，因此创建了这个项目，希望能填补这一空白。
+> 这是一个为 PyTorch 初学者设计的循序渐进的训练题集。我们的目标是创建一个内容全面、知识点系统、并且**不仅仅聚焦于 Tensor 计算本身**的练习集。
+
 
 ## 🎯 总览
 
@@ -145,6 +147,31 @@
 - **手动实现卷积**: 使用张量操作模拟 `nn.Conv2d`
 </details>
 
+## 🛠️ 环境配置
+
+要运行本项目中的练习，您需要配置以下环境：
+
+```bash
+# 使用pip安装依赖
+pip install torch torchvision torchaudio matplotlib jupyter
+
+# 或使用conda
+conda create -n pytorch-tensor-100 python=3.10
+conda activate pytorch-tensor-100
+conda install pytorch torchvision torchaudio matplotlib jupyter -c pytorch
+```
+
+推荐的Python版本: 3.9+
+推荐的PyTorch版本: 1.10+
+
+您可以通过运行以下代码验证环境是否正确配置：
+
+```python
+import torch
+print(f"PyTorch版本: {torch.__version__}")
+print(f"CUDA是否可用: {torch.cuda.is_available()}")
+```
+
 ## 📊 项目进度追踪
 
 - [x] 模块一：完成 9/9 题
@@ -175,11 +202,17 @@
   3. 提交您的更改 (`git commit -m 'Add some AmazingFeature'`)
   4. 推送到分支 (`git push origin feature/AmazingFeature`)
   5. 打开 Pull Request
+- **设计实战挑战题**: 我们特别欢迎基于经典论文设计的实战挑战题目:
+  1. 从经典论文中提取核心算法或思想
+  2. 将其转化为可实现的张量操作练习
+  3. 提供清晰的问题描述和参考实现
+  4. 在提交时注明论文出处和相关链接
 
 ### 贡献指南
 
 - 确保新练习符合项目整体风格和结构
 - 添加适当的注释，使代码易于理解
 - 尽可能添加多样、全面的解答
+- 实战挑战题目最好来源于经典论文的核心思想，帮助学习者理解深度学习领域的重要概念
 
 如果您觉得这个项目对您有所帮助，请给它一个 ⭐️ 以示支持，这对维护者意义重大！
