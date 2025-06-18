@@ -1,4 +1,4 @@
-# 📚 PyTorch-Tensor-100 挑战
+# 📚 PyTorch-Tensor-100
 
 <div align="center">
   <img src="https://pytorch.org/assets/images/pytorch-logo.png" width="200px" alt="PyTorch Logo">
@@ -6,8 +6,8 @@
   <h3>从张量到模型的 100 个 PyTorch 练习</h3>
 </div>
 
-> 本项目灵感来源于 [numpy-100](https://github.com/rougier/numpy-100) 项目。在当前开源社区中，我们发现缺少一个类似于 numpy-100 的系统性 PyTorch 学习路径，因此创建了这个项目，希望能填补这一空白。
-> 这是一个为 PyTorch 初学者设计的循序渐进的训练题集。我们的目标是创建一个内容全面、知识点系统的练习集，**从基础张量操作到实际应用预训练模型**，提供完整的 PyTorch 入门学习体验。
+> 本项目灵感来源于 [numpy-100](https://github.com/rougier/numpy-100) 项目。在当前开源社区中，我们发现缺少一个类似于 numpy-100 的系统性学习 PyTorch 张量操作的学习路径，因此创建了这个项目，希望能填补这一空白。
+> 这是一个为 PyTorch 初学者设计的循序渐进的训练题集，我们的目标是创建一个内容全面、知识点系统的练习集，**从基础张量操作到实际应用预训练模型**，提供完整的 PyTorch 入门学习体验。
 
 ## 🎯 总览
 
@@ -151,35 +151,6 @@
   - 处理不同设备上的模型
   </details>
 
-### 模块六：Autograd 自动求导引擎 🔥
-
-**目标**: 理解 PyTorch 的核心——自动求导机制，这是训练神经网络的基石。
-
-<details>
-<summary><b>主要内容</b> (点击展开)</summary>
-
-- **自动求导基础**
-  - 设置需要梯度：`requires_grad=True`
-  - 执行反向传播：`.backward()`
-  - 访问梯度：`.grad` 并理解梯度累加的特性
-  - 梯度清零：`.grad = None` 或 `.zero_grad()`
-  - 计算图与动态图机制
-- **梯度控制**
-  - 禁用梯度跟踪：`with torch.no_grad()` 或 `.detach()`
-  - 保留计算图：`retain_graph=True`
-  - 设置梯度不可变：`.requires_grad_(False)`
-  - 使用 `torch.enable_grad()` 和 `torch.set_grad_enabled()`
-- **高级应用**
-  - 理解非标量输出的梯度计算与 Jacobian 矩阵
-  - 自定义自动求导函数：使用 `torch.autograd.Function`
-  - 二阶导数与 Hessian 矩阵计算
-  - 检测梯度异常：处理梯度爆炸和梯度消失
-- **性能优化**
-  - 使用 `torch.inference_mode()` 提升推理性能
-  - 减少内存使用：梯度检查点 (gradient checkpointing)
-  - 自动混合精度训练中的梯度缩放
-  - 分析与调试自动求导性能瓶颈
-  </details>
 
 ### 模块六：torchvision 与预训练模型应用 🖼️
 
@@ -212,7 +183,7 @@
 
 ## 🏆 更多深度学习实践
 
-想要更多实战挑战？请访问我的另一个项目 [PyTorch 模型手写实现集合](https://github.com/liuxiang09/Pytorch)，其中包含了多个经典深度学习模型的完整实现，包括但不限于：
+想要更多实战挑战？请访问我的另一个项目 [PyTorch 模型手写实现集合](https://github.com/liuxiang09/Handwritten-Deep-Learning-Models)，其中包含了多个经典深度学习模型的完整实现，包括但不限于：
 
 - ResNet
 - VGG
